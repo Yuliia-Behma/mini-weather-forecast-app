@@ -21,6 +21,7 @@ export default {
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
   height: 100vh;
@@ -28,6 +29,9 @@ body{
 }
 #app{
   height: 100%;
+}
+a{
+  text-decoration: none;
 }
 h1{
   text-align: center;

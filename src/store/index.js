@@ -5,7 +5,7 @@ export const useWeatherStore = defineStore({
     id: 'weather',
     state: () => ({
         city: '',
-        weatherData: null
+        weatherData: {}
     }),
     actions: {
         async getWeatherData(city) {
