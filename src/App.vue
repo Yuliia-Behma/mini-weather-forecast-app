@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Current weather</h1>
+  <SearchCity></SearchCity>
+  <NavFooter></NavFooter>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchCity from './components/SearchCity.vue';
+import NavFooter from './components/NavFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SearchCity,
+    NavFooter
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  max-width: 600px;
+}
+#app{
+  height: 100%;
+}
+h1{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
