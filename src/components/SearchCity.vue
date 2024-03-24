@@ -2,6 +2,7 @@
   <main>
     <div class="search-container">
       <input type="text" id="city" class="search-bar" placeholder="Search..." v-model="city" @keyup.enter="fetchData" />
+      <img id="search-icon" src="../assets/search-icon.png" alt="search-icon" width="50" @click="fetchData">
     </div>
     <RouterView :weather="weather"></RouterView>
   </main>
@@ -42,6 +43,7 @@ main{
 }
 .search-container{
   width: 100%;
+  position: relative;
 }
 #city{
   width: 100%;
@@ -57,5 +59,11 @@ main{
 #city:focus-visible{
   border: 1px solid #d3a0ffa1;
   outline: 1px solid #8b5df6;
+}
+#search-icon{
+  position: absolute;
+  right: 20px;
+  bottom: 4px;
+  z-index: 2;
 }
 </style>
