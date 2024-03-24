@@ -1,5 +1,5 @@
 <template>
-  <h1>Current weather</h1>
+  <h1>Прогноз погоди</h1>
   <SearchCity></SearchCity>
   <NavFooter></NavFooter>
 </template>
@@ -22,11 +22,17 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 body{
   height: 100vh;
   max-width: 600px;
   margin: 0 auto;
+  background-image: url("./assets/bg.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 #app{
   height: 100%;
@@ -36,5 +42,9 @@ a{
 }
 h1{
   text-align: center;
+  font-weight: 700;
+  color: #b2188e;
+  margin: 30px 0 10px;
+  font-size: 50px;
 }
 </style>

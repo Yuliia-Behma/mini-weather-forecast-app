@@ -33,4 +33,29 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.search-container{
+  width: 100%;
+}
+#city{
+  width: 100%;
+  padding: 13px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  border: 1px solid #0bbec791;
+  color:#024783;
+  font-weight: 500;
+  background-color: rgba(240, 248, 255, 0.629);
+  backdrop-filter: blur(2px);
+}
+#city:focus-visible{
+  border: 1px solid #00c9f6a1;
+  outline: 1px solid #5000ac;
+}
+</style>
