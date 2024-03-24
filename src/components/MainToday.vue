@@ -1,14 +1,14 @@
 <template>
-  <div v-if="weather?.main" class="today-container">
+  <div v-if="weather?.list" class="today-container">
     <div class="location-box">
-      {{ weather?.name }}, {{ weather?.sys.country }}
+      {{ weather?.city.name }}, {{ weather?.city.country }}
       <div class="date">
         {{ dateCreater() }}
       </div>
     </div>
     <div class="weather-box">
       <div class="temperature">
-        {{ (weather?.main.temp).toFixed(0) }} C
+        {{ (weather?.list[0].main.temp).toFixed(0) }} C
       </div>
     </div>
   </div>
@@ -17,8 +17,13 @@
 <script>
 export default {
   name: 'MainToday',
-  props: [ 'weather'],
+  props:
+    {
+    weather: Object,
+    },
   setup() {
+  
+
     function dateCreater() {
       let d = new Date();
       let monthes = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

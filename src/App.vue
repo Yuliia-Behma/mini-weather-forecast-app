@@ -26,6 +26,7 @@ export default {
 body{
   height: 100vh;
   max-width: 600px;
+  margin: 0 auto;
 }
 #app{
   height: 100%;

@@ -3,7 +3,6 @@
     <div class="search-container">
       <input type="text" id="city" class="search-bar" placeholder="Search..." v-model="city" @keyup.enter="fetchData"/>
     </div>
-    <MainToday :weather="weather"></MainToday>
     <RouterView :weather="weather"></RouterView>
   </main>
 </template>
@@ -18,6 +17,7 @@ export default defineComponent({
     const city = ref('');
     const store = useWeatherStore()
     const weather = computed(() => store.weatherData)
+    
 
     function fetchData() {
       store.getWeatherData(city.value)
