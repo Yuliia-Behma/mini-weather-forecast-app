@@ -45,7 +45,7 @@ h1{
   text-align: center;
   font-weight: 700;
   color: #b2188e;
-  margin: 30px 0 10px;
+  padding: 30px 0 10px;
   font-size: 50px;
 }
 </style>

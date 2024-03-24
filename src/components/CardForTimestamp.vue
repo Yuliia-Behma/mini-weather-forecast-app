@@ -1,7 +1,7 @@
 <template>
  <div class="container">
   <div class="temperature">
-    {{ Math.round(item.main.temp) }} С
+    {{ Math.round(item.main.temp) }} °C
   </div>
   <div class="details">
     <div class="time-date">
