@@ -9,10 +9,15 @@ export const useWeatherStore = defineStore({
     }),
     actions: {
         async getWeatherData(city) {
+            try {
             const response = await getWeatherData(city)
             this.weatherData = response.data;
             console.log("Weather Data:", this.weatherData);
             this.city = city;
+            } catch(error) {
+                console.error(error);
+                alert("Невірно введена назва міста")
+            }
         }
     }
 })
