@@ -33,6 +33,7 @@ body{
   background-image: url("./assets/bg.jpeg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 #app{
   height: 100%;
