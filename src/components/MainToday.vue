@@ -10,6 +10,14 @@
       <div class="temperature">
         {{ (weather?.list[0].main.temp).toFixed(0) }} C
       </div>
+      <div class="icon">
+      </div>
+      
+        <div class="description">
+          {{ weather.list[0].weather[0].description}}
+          
+        </div>
+      
     </div>
   </div>
 </template>
@@ -26,8 +34,8 @@ export default {
 
     function dateCreater() {
       let d = new Date();
-      let monthes = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-      let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      let monthes = ["Січня", "Лютого", "Березня", "Квітня", "Травня", "Червня", "Липня", "Серпня", "Вересня", "Жовтня", "Листопада", "Грудня"];
+      let days = ["Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота"];
       let day = days[d.getDay()];
       let date = d.getDate();
       let month = monthes[d.getMonth()];

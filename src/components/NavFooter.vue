@@ -2,9 +2,9 @@
   <footer>
     <nav>
       <div class="nav-container">
-        <RouterLink to="/">Today</RouterLink>
-        <RouterLink to="/week">Week</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Сьогодні</RouterLink>
+        <RouterLink to="/week">5 днів</RouterLink>
+        <RouterLink to="/about">Про нас</RouterLink>
       </div>
     </nav>
   </footer>
