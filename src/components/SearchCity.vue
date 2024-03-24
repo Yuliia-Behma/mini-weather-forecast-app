@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="search-container">
-      <input type="text" id="city" class="search-bar" placeholder="Search..." v-model="city" @keyup.enter="fetchData"/>
+      <input type="text" id="city" class="search-bar" placeholder="Search..." v-model="city" @keyup.enter="fetchData" />
     </div>
     <RouterView :weather="weather"></RouterView>
   </main>
@@ -55,7 +55,7 @@ main{
   backdrop-filter: blur(2px);
 }
 #city:focus-visible{
-  border: 1px solid #00c9f6a1;
-  outline: 1px solid #5000ac;
+  border: 1px solid #d3a0ffa1;
+  outline: 1px solid #8b5df6;
 }
 </style>
