@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="search-container">
-      <input type="text" id="city" class="search-bar" placeholder="Пошук..." v-model="city" @keyup.enter="fetchData" />
+      <input type="text" id="city" class="search-bar" placeholder="Пошук..." v-model.trim="city" @keyup.enter="fetchData" />
       <img id="search-icon" src="../assets/search-icon.png" alt="search-icon" width="50" @click="fetchData">
     </div>
     <RouterView :weather="weather"></RouterView>
