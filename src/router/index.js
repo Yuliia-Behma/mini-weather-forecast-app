@@ -10,8 +10,8 @@ const routes = [
         component: MainToday
     },
      {
-        path: '/week',
-        name: 'Week',
+        path: '/forecast',
+        name: 'Forecast',
         component: FiveDays
     },
       {

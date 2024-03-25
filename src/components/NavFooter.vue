@@ -3,8 +3,8 @@
     <nav>
       <div class="nav-container">
         <RouterLink to="/">Сьогодні</RouterLink>
-        <RouterLink to="/week">5 днів</RouterLink>
-        <RouterLink to="/about">Про нас</RouterLink>
+        <RouterLink to="/forecast">5 днів</RouterLink>
+        <RouterLink to="/about">Про додаток</RouterLink>
       </div>
     </nav>
   </footer>
