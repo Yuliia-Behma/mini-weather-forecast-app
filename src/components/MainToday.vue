@@ -14,7 +14,6 @@
         class="weather-icon"
         :src="getWeatherIcon(weather?.list[0].weather[0].icon)"
         alt="weather-icon"
-        width="130"
       />
 
       <div class="description">
@@ -120,5 +119,20 @@ export default {
 }
 .description {
   font-size: 2rem;
+}
+.weather-icon{
+  width: 130px;
+}
+
+@media screen and (min-width: 800px){
+  .temperature{
+    font-size: 4rem;
+  }
+  .weather-box{
+    padding: 10px;
+  }
+  .weather-icon{
+  width: 100px;
+}
 }
 </style>
