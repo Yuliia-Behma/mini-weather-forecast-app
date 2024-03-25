@@ -44,8 +44,41 @@ export default defineComponent({
 
 <style scoped>
 .container{
-  border: 1px solid black;
-  padding: 10px;
+  padding: 5px;
   display: flex;
+  align-items: center;
+  color: #2c0047;
+  /* background-image: radial-gradient(circle, rgba(158,255,255,0.7413340336134453) 0%, rgba(255,255,255,0) 100%); */
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(158,255,255,0.7413340336134453) 9%, rgba(158,255,255,0.6082808123249299) 58%, rgba(255,255,255,0) 100%);
+  backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.temperature{
+    font-size: 2rem;
+  font-weight: 700;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 10px;
+  padding: 15px;
+}
+.details{
+  padding-left: 20px;
+  padding: 15px;
+  color: #000;
+  border-left: 1px solid #fff;
+}
+.time-date{
+  font-size: 1.1rem;
+  font-weight: 700;
+  
+}
+.weather-status{
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 10px;
+  
 }
 </style>

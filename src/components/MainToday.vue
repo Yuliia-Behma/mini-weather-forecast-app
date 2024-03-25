@@ -87,7 +87,6 @@ export default {
   font-size: 1.1rem;
 }
 .weather-box {
-  /* border: 1px solid black; */
   padding: 40px 20px;
   margin: 12px 0;
   display: flex;
