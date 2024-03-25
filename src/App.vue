@@ -43,9 +43,16 @@ a{
 }
 h1{
   text-align: center;
-  font-weight: 700;
-  color: #b2188e;
+  /* font-weight: 700; */
+  color: #c50097;
   padding: 30px 0 10px;
-  font-size: 50px;
+  font-size: 3rem;
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 10px #ffffffbb,
+  -2px -2px 10px #fff,
+  -2px 2px 10px #fff,
+  2px -2px 10px #fff;
 }
 </style>
