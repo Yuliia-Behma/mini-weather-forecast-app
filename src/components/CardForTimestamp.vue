@@ -6,6 +6,7 @@
   <div class="details">
     <div class="time-date">
       {{ convertTimestamp(item.dt) }}
+      <img id="time-icon" src="../assets/time-icon.png" alt="time-icon" width="30">
     </div>
     <div class="weather-status">
       {{ item.weather[0].description }}
@@ -48,7 +49,6 @@ export default defineComponent({
   display: flex;
   align-items: center;
   color: #2c0047;
-  /* background-image: radial-gradient(circle, rgba(158,255,255,0.7413340336134453) 0%, rgba(255,255,255,0) 100%); */
   background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(158,255,255,0.7413340336134453) 9%, rgba(158,255,255,0.6082808123249299) 58%, rgba(255,255,255,0) 100%);
   backdrop-filter: blur(1.5px);
   border-radius: 10px;
@@ -73,12 +73,16 @@ export default defineComponent({
 .time-date{
   font-size: 1.1rem;
   font-weight: 700;
-  
+  position: relative;
 }
 .weather-status{
   font-size: 1.3rem;
   font-weight: 500;
   margin-top: 10px;
-  
+}
+#time-icon{
+  position: relative;
+  right: 0;
+  bottom: -5px;
 }
 </style>
