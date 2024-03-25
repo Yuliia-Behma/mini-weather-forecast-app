@@ -135,4 +135,18 @@ export default {
   width: 100px;
 }
 }
+@media screen and (max-width: 406px){
+    .temperature{
+    font-size: 3.5rem;
+  }
+  .weather-box{
+    padding: 10px;
+  }
+  .weather-icon{
+  width: 100px;
+}
+.today-container{
+  margin-top: 20px;
+}
+}
 </style>
