@@ -3,7 +3,7 @@
     <div class="temp-icon-wraper">
       <div class="temperature">{{ Math.round(item.main.temp) }} °C</div>
       <img
-        id="weather-icon"
+        class="weather-icon"
         :src="getWeatherIcon(item.weather[0].icon)"
         alt="weather-icon"
       />
@@ -34,7 +34,6 @@ export default defineComponent({
     item: Object,
   },
   setup() {
-    // let iconUrl = ref("");
 
     function convertTimestamp(dt) {
       let monthes = [
@@ -121,7 +120,7 @@ export default defineComponent({
   right: 0;
   bottom: -5px;
 }
-#weather-icon {
+.weather-icon {
   width: 70px;
 }
 .temp-icon-wraper{

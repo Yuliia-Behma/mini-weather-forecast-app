@@ -10,7 +10,12 @@
       <div class="temperature">
         {{ (weather?.list[0].main.temp).toFixed(0) }}°C
       </div>
-      <div class="icon"></div>
+      <img
+        class="weather-icon"
+        :src="getWeatherIcon(weather?.list[0].weather[0].icon)"
+        alt="weather-icon"
+        width="130"
+      />
 
       <div class="description">
         {{ weather.list[0].weather[0].description }}
@@ -57,9 +62,14 @@ export default {
       let year = d.getFullYear();
       return `${day} ${date} ${month} ${year}`;
     }
+    function getWeatherIcon(iconCode) {
+      return `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+    }
+
 
     return {
       dateCreater,
+      getWeatherIcon
     };
   },
 };
@@ -106,7 +116,7 @@ export default {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-style: normal;
-  /* color: #07003d; */
+  line-height: 90px;
 }
 .description {
   font-size: 2rem;
